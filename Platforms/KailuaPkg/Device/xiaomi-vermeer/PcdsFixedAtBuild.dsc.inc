@@ -9,8 +9,8 @@ gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerStallBeforeEnable|1000
 # Smbios Info
 gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Redmi"
 gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"K70"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"socrates"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"MP"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"vermeer"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_K70_vermeer"
 
 gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Redmi K70"
 
