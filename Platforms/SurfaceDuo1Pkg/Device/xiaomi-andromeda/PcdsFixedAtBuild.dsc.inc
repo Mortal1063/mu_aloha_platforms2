@@ -1,0 +1,13 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Xiaomi"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"MIX3 5G"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"andromeda"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"E5G"
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Xiaomi MIX3 5G"
+
+# Storage
+gAndromedaPkgTokenSpaceGuid.PcdStorageHasUFS3|0

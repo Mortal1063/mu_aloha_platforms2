@@ -1,0 +1,12 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3120
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"OnePlus"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"7 Pro"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosBoardModel|"18821"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"guacamole"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"GM1910/GM1911/GM1913/GM1917"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Oneplus 7 Pro"

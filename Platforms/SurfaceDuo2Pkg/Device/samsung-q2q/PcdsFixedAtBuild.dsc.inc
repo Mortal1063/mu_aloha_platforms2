@@ -1,0 +1,25 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|2208
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1768
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Samsung Electronics"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Galaxy Z Fold 3 5G"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"q2q"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Galaxy_Z_Fold_3_5G_q2q"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Galaxy Z Fold 3 5G"
+
+# Display Caller
+# gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerExitDisableDisplay|FALSE
+# gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerStallBeforeEnable|2000000
+
+[PcdsDynamicDefault.common]
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|2208
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1768
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|2208
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|1768
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|276
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|93
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|276
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|93

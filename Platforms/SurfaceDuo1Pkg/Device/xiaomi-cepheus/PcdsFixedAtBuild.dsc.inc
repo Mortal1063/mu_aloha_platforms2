@@ -1,0 +1,19 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+
+# Display Caller
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerExitDisableDisplay|FALSE
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerStallBeforeEnable|0
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"XiaoMi"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Mi 9"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosBoardModel|"XiaoMi 9"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"Cepheus"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"MP"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"cepheus"
+
+# Storage
+gAndromedaPkgTokenSpaceGuid.PcdStorageHasUFS3|0

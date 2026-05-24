@@ -1,0 +1,16 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Qualcomm"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"6"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"yupik"
+
+# Display Caller
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerExitDisableDisplay|FALSE
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerStallBeforeEnable|0
+
+# Storage
+gAndromedaPkgTokenSpaceGuid.PcdStorageHasUFS3|1

@@ -1,0 +1,21 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2400
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Redmi"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Note 9S"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"miatoll"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"MP"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Redmi Note 9S"
+
+[PcdsDynamicDefault.common]
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1080
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2400
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1080
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|2400
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|120 # 94.73
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|90 # 168.75
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|120 # 94.73
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|90 # 168.75

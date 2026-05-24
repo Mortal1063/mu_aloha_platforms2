@@ -1,0 +1,11 @@
+services:
+        buildall:
+                image: ubuntu:24.04
+                container_name: mubuild
+                volumes:
+                        - ./:/root/
+                restart: "no"
+                command: bash /root/scripts/docker_setup.sh
+                environment:
+                        TZ: Asia/Shanghai
+                        DEBIAN_FRONTEND: noninteractive

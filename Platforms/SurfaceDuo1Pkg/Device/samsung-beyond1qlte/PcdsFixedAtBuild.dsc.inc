@@ -1,0 +1,14 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3040
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Samsung"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"S10"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"beyond1qlte"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"MP"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Samsung S10"
+
+# Storage
+gAndromedaPkgTokenSpaceGuid.PcdStorageHasUFS3|0

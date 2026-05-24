@@ -1,0 +1,23 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2248
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Qualcomm"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"6"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"atoll"
+
+# Display Caller
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerExitDisableDisplay|FALSE
+gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerStallBeforeEnable|1000
+
+[PcdsDynamicDefault.common]
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1080
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2248
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1080
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|2248
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|120 # 94.73
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|90 # 168.75
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|120 # 94.73
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|90 # 168.75

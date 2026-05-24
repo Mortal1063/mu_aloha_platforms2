@@ -1,0 +1,14 @@
+[PcdsFixedAtBuild.common]
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+
+# Smbios Info
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Xiaomi"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"K20 Pro"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"raphael"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"MP"
+
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"Xiaomi K20 Pro"
+
+# Storage
+gAndromedaPkgTokenSpaceGuid.PcdStorageHasUFS3|0
