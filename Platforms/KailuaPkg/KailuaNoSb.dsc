@@ -28,10 +28,10 @@
   SECURE_BOOT                    = 0
   USE_PHYSICAL_TIMER             = 0
 
-  USE_SCREEN_FOR_SERIAL_OUTPUT    = 0
+  USE_SCREEN_FOR_SERIAL_OUTPUT    = 1
   USE_UART_GENI_FOR_SERIAL_OUTPUT = 0
   USE_UART_DM_FOR_SERIAL_OUTPUT   = 0
-  USE_MEMORY_FOR_SERIAL_OUTPUT    = 0
+  USE_MEMORY_FOR_SERIAL_OUTPUT    = 1
 
   DEFAULT_KEYS                   = FALSE
   PK_DEFAULT_FILE                = AndromedaPkg/Include/Resources/SecureBoot/keystore/WOAMSMNILE-PK.der
