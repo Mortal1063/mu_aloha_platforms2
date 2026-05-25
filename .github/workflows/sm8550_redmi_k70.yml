@@ -8,7 +8,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Platforms/KailuaPkg/Device/xiaomi-vermeer/**'
+      - 'Platforms/KailuaPkg/Device/redmi-vermeer/**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -28,7 +28,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v6
       - name: Build SB/NOSB uefi for xiaomi redmi k70.
-        run: bash scripts/ci_setup.sh && ./build_uefi.py -d xiaomi-vermeer
+        run: bash scripts/ci_setup.sh && ./build_uefi.py -d redmi-vermeer
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v6
