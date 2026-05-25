@@ -1,0 +1,2 @@
+CUST_LOGO = 0
+HAS_MLVM = TRUE
