@@ -14,12 +14,12 @@ static CONFIGURATION_DESCRIPTOR_EX gDeviceConfigurationDescriptorEx[] = {
     {"DetectRetailUserAttentionHotkey", 0x00},
     {"DetectRetailUserAttentionHotkeyCode", 0x17},
     {"DloadCookieAddr", 0x01FD9000},
-    {"DloadCookieValue", 0x10},
+    {"DloadCookieValue", 0x30},
     {"EarlyInitCoreCnt", 1},
     {"EnableACPIFallback", 0x0},
     {"EnableDisplayImageFv", 0x1},
-    {"EnableLogFsSyncInRetail", 0x0},
-    {"EnableDisplayThread", 0},
+    {"EnableLogFsSyncInRetail", 0x1},
+    {"EnableDisplayThread", 1},
     {"EnableMultiThreading", 0},
     {"EnableMultiCoreFvDecompression", 0},
     {"EnableOEMSetupAppInRetail", 0x0},
@@ -70,3 +70,4 @@ CONFIGURATION_DESCRIPTOR_EX *GetPlatformConfigurationMap()
 {
   return gDeviceConfigurationDescriptorEx;
 }
+
