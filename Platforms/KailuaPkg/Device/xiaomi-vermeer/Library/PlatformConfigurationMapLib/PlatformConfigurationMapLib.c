@@ -70,4 +70,3 @@ CONFIGURATION_DESCRIPTOR_EX *GetPlatformConfigurationMap()
 {
   return gDeviceConfigurationDescriptorEx;
 }
-
