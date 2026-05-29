@@ -45,20 +45,7 @@ static ARM_MEMORY_REGION_DESCRIPTOR_EX gDeviceMemoryDescriptorEx[] = {
     { "RAM Partition",     0xDFC00000, 0x05860000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
     { "NOMAP",             0xFF800000, 0x00800000, NoHob,  MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
 
-    /* RAM partition regions */
-    /* 2GB per region */
-
-    // Memory Hole
-    // 0x100000000 - 0x880000000
-    // Size: 0x780000000
-
-//    { "RAM Partition",     0x880000000, 0x39A00000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-
-    // Memory Hole
-    // 0x8B9D00000 - 0x8c0000000
-    // Size: 0x6300000
-//    { "RAM Partition",     0x8C0000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-//    { "RAM Partition",     0x940000000, 0x40000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+    // RamPartitionDXe will add RAM Partitions.
 
 
     /* Other memory regions */
