@@ -101,12 +101,6 @@ FILE FREEFORM = A91D838E-A5FA-4138-825D-455E23030794 {
 }
 
 
-FILE FREEFORM = 6195D5B6-6A07-4A61-9B03-F3252DA77FE8 {
-    SECTION UI = "logo2.bmp"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/logo2.bmp
-}
-
-
 FILE FREEFORM = 8CAE2C55-FC5A-410B-812B-8CA22F572F36 {
     SECTION UI = "Panel_truly_wqxga_dsc_cmd.xml"
     SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_truly_wqxga_dsc_cmd.xml
