@@ -373,12 +373,6 @@ FILE FREEFORM = 43013DAA-0CE4-4D82-99EE-17F772A38401 {
 }
 
 
-FILE FREEFORM = 15A84758-9EE1-4543-9C82-F430A70F0813 {
-    SECTION UI = "Panel_N81A_36_02_0a_p0_duldsi_dsc_vid.xml"
-    SECTION RAW = RawFiles/Panel_N81A_36_02_0a_p0_duldsi_dsc_vid.xml
-}
-
-
 FILE FREEFORM = 9A2A35AB-C69B-2729-A529-4C2A6BECAA74 {
     SECTION UI = "Panel_secondary_sim_vid.xml"
     SECTION RAW = RawFiles/Panel_secondary_sim_vid.xml

@@ -34,16 +34,15 @@ INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ICBDxe/ICBD
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/QcomBds/QcomBds.inf
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Application/QcomChargerApp/QcomChargerApp.inf
-#INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RscDxe/RscDxe.inf
+INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RscDxe/RscDxe.inf
 
 # Patched Binaries
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/ButtonsDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/SPMIDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/UFSDxe.inf
-INF QcomPkg/PatchedBinaries/UsbConfigDxe.inf
+INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/SdccDxe.inf
+INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/UsbConfigDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/ClockDxe.inf
-#INF AndromedaPkg/Driver/DisplayCallerDxe/DisplayCallerDxe.inf
-#INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/PmicDxeLa.inf
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/QcomChargerDxeLA.inf
 
@@ -89,15 +88,22 @@ FILE DRIVER =  F09AD92E-4E91-490F-AB99-E69939B840B2 {
 }
 
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RNGDxe/RngDxe.inf
-#FILE DRIVER = B0D3689E-11F8-43C6-8ECE-023A29CEC35B {
-#    SECTION UI = "RngDxe"
-#    SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RNGDxe/RngDxe.efi
-#}
+FILE DRIVER = B0D3689E-11F8-43C6-8ECE-023A29CEC35B {
+    SECTION UI = "RngDxe"
+    SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RNGDxe/RngDxe.efi
+}
 
 # Raw Files
+
 FILE FREEFORM = A91D838E-A5FA-4138-825D-455E23030794 {
     SECTION UI = "logo1.bmp"
     SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/logo1.bmp
+}
+
+
+FILE FREEFORM = 6195D5B6-6A07-4A61-9B03-F3252DA77FE8 {
+    SECTION UI = "logo2.bmp"
+    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/logo2.bmp
 }
 
 
@@ -293,78 +299,6 @@ FILE FREEFORM = EB0A97F6-39DB-41D4-9B3C-CA3BADC144B4 {
 }
 
 
-FILE FREEFORM = 683F6260-3744-4AE9-9AEC-3ED2CE3F0062 {
-    SECTION UI = "Panel_M2_38_0c_0a_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M2_38_0c_0a_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 0E3E03CE-A63D-4603-A171-8D0C8FCFFC44 {
-    SECTION UI = "Panel_M3_38_0c_0a_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M3_38_0c_0a_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 7A8443CA-A29C-4488-853C-2AE73DE462A3 {
-    SECTION UI = "Panel_M3GL_38_0c_0a_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M3GL_38_0c_0a_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = F2992DB9-EC8F-44DA-96D8-805F74EE205B {
-    SECTION UI = "Panel_M2A_42_02_0b_ltpo_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M2A_42_02_0b_ltpo_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 485D1440-5080-899F-A66A-A88C777411EF {
-    SECTION UI = "Panel_M11_42_02_0a_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M11_42_02_0a_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = FFEAE931-57CA-449B-AE6A-A9D68A7A8790 {
-    SECTION UI = "Panel_N11_42_02_0a_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_N11_42_02_0a_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 922A8AF4-47F4-44F7-97C4-D6D157F694B7 {
-    SECTION UI = "Panel_M1_42_02_0a_ltpo_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M1_42_02_0a_ltpo_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 4C2A42CA-B71A-2527-A327-2B5A3BCDBA52 {
-    SECTION UI = "Panel_M18_38_0c_0a_prim_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M18_38_0c_0a_prim_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 7B5C21BC-B31A-3215-B235-5A3B2AEACB31 {
-    SECTION UI = "Panel_M18_38_0c_0a_sec_dsc_cmd.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_M18_38_0c_0a_sec_dsc_cmd.xml
-}
-
-
-FILE FREEFORM = 43013DAA-0CE4-4D82-99EE-17F772A38401 {
-    SECTION UI = "Panel_N81A_36_02_0a_duldsi_dsc_vid.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_N81A_36_02_0a_duldsi_dsc_vid.xml
-}
-
-
-FILE FREEFORM = 15A84758-9EE1-4543-9C82-F430A70F0813 {
-    SECTION UI = "Panel_N81A_36_02_0a_p0_duldsi_dsc_vid.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_N81A_36_02_0a_p0_duldsi_dsc_vid.xml
-}
-
-
-FILE FREEFORM = 9A2A35AB-C69B-2729-A529-4C2A6BECAA74 {
-    SECTION UI = "Panel_secondary_sim_vid.xml"
-    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_secondary_sim_vid.xml
-}
-
-
 FILE FREEFORM = F4A245C8-940E-4523-A53B-82E3C8BC6970 {
     SECTION UI = "Panel_r66451_120hz_fhd_plus_dsc_cmd_demura.xml"
     SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_r66451_120hz_fhd_plus_dsc_cmd_demura.xml
@@ -389,6 +323,18 @@ FILE FREEFORM = 03E9256F-E621-48D8-8576-7E3B4FCF2D41 {
 }
 
 
+FILE FREEFORM = 7E232597-AA58-464F-AD1D-6916E6DEC9BE {
+    SECTION UI = "Panel_wt0600_2k_60hz_vid.xml"
+    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_wt0600_2k_60hz_vid.xml
+}
+
+
+FILE FREEFORM = BD0D79FC-8D9E-4DBB-A961-AC70E5EEC80E {
+    SECTION UI = "Panel_wt0600_1080p_60hz_vid.xml"
+    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_wt0600_1080p_60hz_vid.xml
+}
+
+
 FILE FREEFORM = 21E9BDD9-6C3F-4F10-84A5-BBEC322741F1 {
     SECTION UI = "uefipil.cfg"
     SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/uefipil.cfg
@@ -409,7 +355,7 @@ INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SPIDxe/SPIDxe.inf
-INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
+#INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/PmicGlinkDxe/PmicGlinkDxe.inf
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLA.inf
@@ -451,8 +397,8 @@ FILE DRIVER = 32C71E68-83A8-46ED-AED1-094E71B12057 {
 
 # Patched Binaries
 #INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/FeatureEnablerDxe.inf
-#FILE DRIVER = 1C04F529-0612-4319-9315-B2E75C16810A {
-#    SECTION PE32 = QcomPkg/PatchedBinaries/FeatureEnablerDxe.efi
-#    SECTION UI = "FeatureEnablerDxe"
-#}
+FILE DRIVER = 1C04F529-0612-4319-9315-B2E75C16810A {
+    SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/FeatureEnablerDxe.efi
+    SECTION UI = "FeatureEnablerDxe"
+}
 

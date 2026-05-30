@@ -12,14 +12,14 @@ static ARM_MEMORY_REGION_DESCRIPTOR_EX gDeviceMemoryDescriptorEx[] = {
     { "XBL DT",            0x81A00000, 0x00040000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
     { "XBL Ramdump",       0x81A40000, 0x001C0000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN },
     { "AOP",               0x81C00000, 0x000A0000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN },
-    { "RAM Partition",     0x81CA0000, 0x00060000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
+    { "RAM Partition",     0x81CA0000, 0x00044000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
+    { "UEFI Log",          0x81CE4000, 0x0001C000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN },
     { "SMEM",              0x81D00000, 0x00200000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN },
     { "RAM Partition",     0x81F00000, 0x08900000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
     { "PIL Reserved",      0x8A800000, 0x18280000, AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN },
     { "Display Demura",    0xA2A80000, 0x02B00000, AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN },
     { "RAM Partition",     0xA5580000, 0x00B80000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
     { "DBI Dump",          0xA6100000, 0x00F00000, NoHob,  MMAP_IO, INITIALIZED, Reserv, UNCACHED_UNBUFFERED_XN },
-    /* UEFI FD is 'protected' by something */
     { "FD Reserved I",     0xA7000000, 0x00400000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK },
     { "FD Reserved II",    0xA7400000, 0x00200000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK },
     { "CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK },
@@ -45,7 +45,37 @@ static ARM_MEMORY_REGION_DESCRIPTOR_EX gDeviceMemoryDescriptorEx[] = {
     { "RAM Partition",     0xDFC00000, 0x05860000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN },
     { "NOMAP",             0xFF800000, 0x00800000, NoHob,  MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
 
-    // RamPartitionDXe will add RAM Partitions.
+    /* RAM partition regions */
+    /* 2GB per region */
+
+    // Memory Hole
+    // 0x100000000 - 0x880000000
+    // Size: 0x780000000
+
+//    { "RAM Partition",     0x880000000, 0x35800000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv,   WRITE_BACK_XN},
+
+    // Memory Hole
+    // 0x8B9A00000 - 0x8c0000000
+    // Size: 0x6600000
+//    { "RAM Partition",     0x8C0000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0x940000000, 0x40000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+
+//#if USE_MEMORY_FOR_SERIAL_OUTPUT == 1
+//    { "PStore",            0x940000000, 0x00400000, AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN},
+//    { "RAM Partition",     0x940400000, 0x3FC00000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//#else
+//    { "RAM Partition",     0x940000000, 0x40000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//#endif
+
+//    { "RAM Partition",     0x980000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xA00000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xA80000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xB00000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xB80000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xC00000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xC80000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xD00000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
+//    { "RAM Partition",     0xD80000000, 0x80000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
 
 
     /* Other memory regions */
