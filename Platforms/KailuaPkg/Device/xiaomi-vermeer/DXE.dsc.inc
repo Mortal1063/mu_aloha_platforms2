@@ -1,5 +1,5 @@
 [Components.common]
-AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
+#AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
 $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
 $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ParserDxe/ParserDxe.inf
 $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SerialPortDxe/SerialPortDxe.inf

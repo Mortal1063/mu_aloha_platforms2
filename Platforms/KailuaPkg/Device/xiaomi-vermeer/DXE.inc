@@ -4,7 +4,7 @@
 #}
 
 INF AndromedaPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
-INF AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
+#INF AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ParserDxe/ParserDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SerialPortDxe/SerialPortDxe.inf
